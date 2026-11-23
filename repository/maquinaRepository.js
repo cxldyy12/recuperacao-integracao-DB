@@ -27,8 +27,7 @@ export async function listar() {
 
 export async function buscarPorId(id) {
   const sql = `
-    SELECT id, codigo, nome, setor, status
-    FROM maquinas
+    SELECT * FROM maquinas
     WHERE id = ?
   `;
 
