@@ -5,10 +5,10 @@ dotenv.config();
 
 const conexao = mysql.createPool({
     host: process.env.DB_HOST,
-    db_port: process.env.DB_PORT,
     user: process.env.DB_USER,
-    passw: process.env.DB_PASSWORD,
-    name: process.env.DB_NAME,
-    port: process.env.PORT,
-})
+    password: process.env.DB_PASSWORD,
+    database: process.env.DB_NAME,
+    port: Number(process.env.DB_PORT)
+});
+
 export default conexao;

@@ -1,4 +1,3 @@
-DROP DATABASE energytrack_db;
 CREATE DATABASE IF NOT EXISTS energytrack_db
   CHARACTER SET utf8mb4
   COLLATE utf8mb4_unicode_ci;
@@ -24,3 +23,5 @@ CREATE TABLE IF NOT EXISTS leituras_energia (
     ON UPDATE CASCADE
     ON DELETE RESTRICT
 );
+
+
